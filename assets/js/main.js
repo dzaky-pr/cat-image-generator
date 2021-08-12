@@ -113,5 +113,5 @@ form.addEventListener('submit', (response) => {
     btnSubmit.classList.remove('disabled');
     btnSubmitSpan.innerHTML = 'Generate!';
     loaderSubmit.style.display = 'none';
-  }, 2000);
+  }, 3000);
 });
