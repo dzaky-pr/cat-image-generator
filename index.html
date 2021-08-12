@@ -41,7 +41,7 @@
         <a href="index.html" class="bg-dark rounded-circle hero-logo" data-aos="zoom-in"><img src="assets/img/hero-logo.png" height="200px" alt="" /></a>
         <h1 data-aos="zoom-in" class="bg-dark p-3 rounded">Welcome To Random Cat Generator!</h1>
         <h2 data-aos="fade-up" class="bg-dark p-3 rounded">You can view and download any cat photos you want!</h2>
-        <a data-aos="fade-up" data-aos-delay="200" href="#main" onclick="catGenerator()" class="btn-get-started"><strong>Generate!</strong> </a>
+        <a data-aos="fade-up" data-aos-delay="200" href="#main" class="btn-get-started"><strong>Generate!</strong> </a>
       </div>
     </section>
     <!-- End Hero -->
@@ -59,10 +59,19 @@
           </div>
 
           <div class="d-flex align-item-center justify-content-center">
-            <div class="card m-5">
+            <div class="card m-5 form-submit">
               <div id="result" class="d-flex justify-content-center align-items-center"></div>
-              <div class="card-body">
-                <button href="#main" onclick="catGenerator()" class="btn btn-primary w-100"><strong>Generate!</strong></button>
+              <div class="card-body d-flex justify-content-center align-items-center">
+                <form class="form-submit">
+                  <button id="loading-2" href="#main" onclick="catGenerator()" type="submit" class="btn btn-primary btn-submit d-flex justify-content-center align-items-center">
+                    <div style="display: none" class="loader-submit">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <span>Generate!</span>
+                  </button>
+                </form>
               </div>
             </div>
           </div>
